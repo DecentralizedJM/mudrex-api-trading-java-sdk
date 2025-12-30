@@ -1,12 +1,12 @@
-# Mudrex Java SDK (Unofficial)
+# Mudrex Java SDK
 
 [![Java 11+](https://img.shields.io/badge/java-11+-blue.svg)](https://www.oracle.com/java/technologies/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub](https://img.shields.io/github/stars/DecentralizedJM/mudrex-java-sdk?style=social)](https://github.com/DecentralizedJM/mudrex-java-sdk)
 
-**Unofficial Java SDK for [Mudrex Futures Trading API](https://docs.trade.mudrex.com)** - Enterprise-ready trading client for Java developers.
+**Unofficial Java SDK for [Mudrex Futures Trading API](https://docs.trade.mudrex.com/docs/overview)** - Enterprise-ready trading client for Java developers.
 
-> 📝 **Personal Repository**: This is a community/personal project by [@DecentralizedJM](https://github.com/DecentralizedJM). Not officially maintained by Mudrex.
+**Built and maintained by [DecentralizedJM](https://github.com/DecentralizedJM)**
 
 ## 🚀 Features
 
@@ -197,12 +197,12 @@ MIT License - see [LICENSE](LICENSE) for details.
 ## 🔗 Links
 
 - [Mudrex Trading API Docs](https://docs.trade.mudrex.com)
-- [API Quick Reference](https://docs.trade.mudrex.com/docs/quick-reference)
+- [API Quick Reference](https://docs.trade.mudrex.com/docs/overview)
 - [Mudrex Platform](https://mudrex.com)
 
 ## ⚠️ Disclaimer
 
-This SDK is for educational and informational purposes. Cryptocurrency trading involves significant risk. Always:
+**This is an UNOFFICIAL SDK.** This SDK is for educational and informational purposes. Cryptocurrency trading involves significant risk. Always:
 - Start with small amounts
 - Use proper risk management (stop-losses)
 - Never trade more than you can afford to lose
@@ -210,4 +210,4 @@ This SDK is for educational and informational purposes. Cryptocurrency trading i
 
 ---
 
-Built with ❤️ for the Mudrex community
+Built and maintained by [DecentralizedJM](https://github.com/DecentralizedJM) with ❤️
