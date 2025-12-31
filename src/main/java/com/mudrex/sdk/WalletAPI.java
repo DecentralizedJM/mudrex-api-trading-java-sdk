@@ -28,7 +28,7 @@ public class WalletAPI {
      * Get spot wallet balance
      */
     public WalletModels.WalletBalance getSpotBalance() throws MudrexException {
-        byte[] resp = client.get("/wallet/funds");
+        byte[] resp = client.post("/wallet/funds", null);
         Type type = new TypeToken<OtherModels.APIResponse<WalletModels.WalletBalance>>(){}.getType();
         OtherModels.APIResponse<WalletModels.WalletBalance> apiResp = gson.fromJson(
                 new String(resp, StandardCharsets.UTF_8), type);
@@ -39,7 +39,7 @@ public class WalletAPI {
      * Get futures wallet balance
      */
     public WalletModels.FuturesBalance getFuturesBalance() throws MudrexException {
-        byte[] resp = client.get("/wallet/balance");
+        byte[] resp = client.get("/futures/funds");
         Type type = new TypeToken<OtherModels.APIResponse<WalletModels.FuturesBalance>>(){}.getType();
         OtherModels.APIResponse<WalletModels.FuturesBalance> apiResp = gson.fromJson(
                 new String(resp, StandardCharsets.UTF_8), type);
