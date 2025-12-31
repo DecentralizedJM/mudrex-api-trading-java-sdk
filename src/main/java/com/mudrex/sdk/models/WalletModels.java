@@ -11,26 +11,34 @@ public class WalletModels {
         @SerializedName("total")
         public String total;
         
-        @SerializedName("available")
-        public String available;
+        @SerializedName("withdrawable")
+        public String withdrawable;
+        
+        @SerializedName("invested")
+        public String invested;
         
         @SerializedName("rewards")
         public String rewards;
         
-        @SerializedName("withdrawable")
-        public String withdrawable;
+        @SerializedName("coin_investable")
+        public String coinInvestable;
         
-        @SerializedName("currency")
-        public String currency;
+        @SerializedName("coinset_investable")
+        public String coinsetInvestable;
+        
+        @SerializedName("vault_investable")
+        public String vaultInvestable;
 
         @Override
         public String toString() {
             return "WalletBalance{" +
                     "total='" + total + '\'' +
-                    ", available='" + available + '\'' +
-                    ", rewards='" + rewards + '\'' +
                     ", withdrawable='" + withdrawable + '\'' +
-                    ", currency='" + currency + '\'' +
+                    ", invested='" + invested + '\'' +
+                    ", rewards='" + rewards + '\'' +
+                    ", coinInvestable='" + coinInvestable + '\'' +
+                    ", coinsetInvestable='" + coinsetInvestable + '\'' +
+                    ", vaultInvestable='" + vaultInvestable + '\'' +
                     '}';
         }
     }
@@ -39,26 +47,18 @@ public class WalletModels {
         @SerializedName("balance")
         public String balance;
         
-        @SerializedName("available_transfer")
-        public String availableTransfer;
+        @SerializedName("locked_amount")
+        public String lockedAmount;
         
-        @SerializedName("unrealized_pnl")
-        public String unrealizedPnL;
-        
-        @SerializedName("margin_used")
-        public String marginUsed;
-        
-        @SerializedName("currency")
-        public String currency;
+        @SerializedName("first_time_user")
+        public boolean firstTimeUser;
 
         @Override
         public String toString() {
             return "FuturesBalance{" +
                     "balance='" + balance + '\'' +
-                    ", availableTransfer='" + availableTransfer + '\'' +
-                    ", unrealizedPnL='" + unrealizedPnL + '\'' +
-                    ", marginUsed='" + marginUsed + '\'' +
-                    ", currency='" + currency + '\'' +
+                    ", lockedAmount='" + lockedAmount + '\'' +
+                    ", firstTimeUser=" + firstTimeUser +
                     '}';
         }
     }

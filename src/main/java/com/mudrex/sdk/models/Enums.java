@@ -43,7 +43,9 @@ public class Enums {
         @SerializedName("OPEN")
         OPEN,
         @SerializedName("CLOSED")
-        CLOSED
+        CLOSED,
+        @SerializedName("LIQUIDATED")
+        LIQUIDATED
     }
 
     public enum WalletType {
